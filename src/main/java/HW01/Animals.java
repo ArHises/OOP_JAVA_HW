@@ -120,6 +120,7 @@ public abstract class Animals {
     public String toString() {
         return "Animals{" +
                 "name='" + name + '\'' +
+                ", id='" + id + '\'' +
                 ", sex='" + sex + '\'' +
                 ", status='" + state + '\'' +
                 ", age=" + age + "y.o"+

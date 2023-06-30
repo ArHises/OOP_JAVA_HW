@@ -38,11 +38,11 @@ public class Program {
         ArrayList<Animals> myFarm = new ArrayList<>(Arrays.asList(dog1, cat1, chicken1, cow1));
 
         for (Animals ani : myFarm) {
+            System.out.println("-----");
             System.out.println(ani.toString());
             System.out.println(ani.speak());
             ani.eat("Spaghetti", 0.2);
             System.out.println(ani.toString());
-            System.out.println("-----");
         }
     }
 }
