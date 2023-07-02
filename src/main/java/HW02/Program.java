@@ -92,7 +92,7 @@ public class Program {
                 double percentage = (double) currentHealth / maxHealth * 100;
 
                 String colorCode;
-                if(percentage < 25){
+                if(percentage <= 25){
                     colorCode = ANSI_RED;
                 } else if (25 < percentage && percentage <= 99) {
                     colorCode = ANSI_YELLOW;
