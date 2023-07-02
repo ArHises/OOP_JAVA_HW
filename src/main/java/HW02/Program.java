@@ -100,8 +100,8 @@ public class Program {
                     colorCode = ANSI_GREEN;
                 }
                 System.out.print("HP[");
-                for (int i = 0; i < maxHealth; i += 10) {
-                    if (i < currentHealth) {
+                for (int i = 0; i < 100; i += 10) {
+                    if (i < percentage) {
                         System.out.print(colorCode + "X");
                     } else {
                         System.out.print(" ");
@@ -117,10 +117,11 @@ public class Program {
             if (object instanceof MagicEnergy) {
                 int currentMagicEnergy = ((MagicEnergy) object).getCurrentMagicEnergy();
                 int maxMagicEnergy = ((MagicEnergy) object).getMaxMagicEnergy();
+                double percentage = (double) currentMagicEnergy / maxMagicEnergy * 100;
 
                 System.out.print("ME[");
-                for (int i = 0; i < maxMagicEnergy; i += 10) {
-                    if (i < currentMagicEnergy) {
+                for (int i = 0; i < 100; i += 10) {
+                    if (i < percentage) {
                         System.out.print(ANSI_BLUE + "O");
                     } else {
                         System.out.print(ANSI_RESET + " ");
