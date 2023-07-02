@@ -127,7 +127,7 @@ public class Program {
                         System.out.print(ANSI_RESET + " ");
                     }
                 }
-                System.out.print("] " + currentMagicEnergy + "/" + maxMagicEnergy);
+                System.out.print(ANSI_RESET + "] " + currentMagicEnergy + "/" + maxMagicEnergy);
                 System.out.println();
             } else {
                 System.out.println("--- NO-MAGIC-ENERGY ---");
