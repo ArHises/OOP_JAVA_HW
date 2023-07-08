@@ -35,6 +35,6 @@ public class Container implements Comparable<Container> , Iterable<Box>{
 
     @Override
     public Iterator<Box> iterator() {
-        return boxes.iterator();
+        return new ContainerIterator(boxes);
     }
 }
