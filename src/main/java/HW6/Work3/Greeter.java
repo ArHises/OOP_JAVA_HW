@@ -1,10 +1,10 @@
 package HW6.Work3;
 
 public class Greeter {
-    private String formality;
+    private FormalityStyle formality;
 
     public String greet() {
-        return switch (FormalityStyle.valueOf(this.formality)) {
+        return switch (this.formality) {
             case FORMAL -> "Good evening, sir.";
             case CASUAL -> "Sup bro?";
             case INTIMATE -> "Hello Darling!";
@@ -12,7 +12,7 @@ public class Greeter {
         };
     }
 
-    public void setFormality(String formality) {
+    public void setFormality(FormalityStyle formality) {
         this.formality = formality;
     }
 }
